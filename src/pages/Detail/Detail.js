@@ -41,8 +41,14 @@ class Detail extends Component {
     const { data } = this.state;
     return (
       <GridContent>
-        <div className={styles.normal}>
-          <div className={styles.details}>
+        <div>
+          {data.length > 0 && data[0] ?
+            <div className={styles.detailsBanner}>
+              <img  src={[require(`../../assets/img/${data[0].upload_fid}`)]} />
+              <div className={styles.bannerTitle}>{data[0].title}</div>
+
+            </div> : ''
+          }
             {data.length > 0 ?
               data.map((item, index) =>
                 <div key={index}>
@@ -54,7 +60,7 @@ class Detail extends Component {
                 </div>,
               ) : ''
             }
-          </div>
+
         </div>
       </GridContent>
     );

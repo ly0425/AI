@@ -36,7 +36,7 @@ class Index extends Component {
                   (
                     <li className={styles.modular} key={index}>
                       <div className={styles.title}>{item.title}</div>
-                      <div className={styles.info} dangerouslySetInnerHTML={{ __html: item.body }} title={item.body}/>
+                      <div className={styles.info} dangerouslySetInnerHTML={{ __html: item.body }} />
                       <Link to={`/${item.children[0].nid}`} className={styles.viewDetails}>查看详情&nbsp;&nbsp;<Icon type="arrow-right" /></Link>
                     </li>
                   ),
