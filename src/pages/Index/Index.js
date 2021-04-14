@@ -30,14 +30,21 @@ class Index extends Component {
           <div className={styles.banner}/>
           <div className={styles.center}>
             <h1>产品服务</h1>
-            <ul>
+            <ul className={styles.box}>
               {data.length > 0 ?
                 data[0].children.map((item, index) =>
                   (
                     <li className={styles.modular} key={index}>
                       <div className={styles.title}>{item.title}</div>
                       <div className={styles.info} dangerouslySetInnerHTML={{ __html: item.body }} />
-                      <Link to={`/${item.children[0].nid}`} className={styles.viewDetails}>查看详情&nbsp;&nbsp;<Icon type="arrow-right" /></Link>
+                      {/*<Link to={`/${item.children[0].nid}`} className={styles.viewDetails}>查看详情&nbsp;&nbsp;<Icon type="arrow-right" /></Link>*/}
+                      {
+                        item.children.map((obj, index) =>
+                          (
+                            <Link to={`/${obj.nid}`} className={styles.everyDetails}>{obj.title}&nbsp;&nbsp;<Icon type="arrow-right" /></Link>
+                          ),
+                        )
+                      }
                     </li>
                   ),
                 ) : ''

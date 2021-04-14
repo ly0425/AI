@@ -38,13 +38,18 @@ a {
 .center ul {
   //padding: 0 216px;
 }
-
+.box{
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
 .modular {
   padding: 0 24px;
-  float: left;
-  margin: 0 34px 34px 0;
-  width: 360px;
-  height: 300px;
+  width: 31.3%;
+  //margin: 0 34px 34px 34px;
+  margin: 0 1% 1% 1%;
+  height: 450px;
   opacity: 1;
   background: #f9fbff;
   border: 1px solid #e1e4f3;
@@ -55,7 +60,7 @@ a {
   color: #fff;
 }
 
-.modular:hover .viewDetails {
+.modular:hover .viewDetails,.modular:hover .everyDetails {
   color: #fff;
 }
 
@@ -71,14 +76,7 @@ a {
   height: 100px;
   margin: 33px 0;
   font-size: 16px;
-  /*line-height: 30px;*/
-
-  /*display: -webkit-box;*/
-  /*-webkit-box-orient: vertical;*/
-  /*-webkit-line-clamp: 3;*/
-  /*overflow: hidden;*/
-
-  overflow: hidden;
+ overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -88,5 +86,12 @@ a {
 .viewDetails {
   font-size: 20px;
   color: #00a4fa;
+  line-height: 30px;
+}
+
+.everyDetails{
+  display: block;
+  color: #00a4fa;
+  font-size: 16px;
   line-height: 30px;
 }

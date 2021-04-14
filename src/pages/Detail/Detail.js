@@ -44,7 +44,8 @@ class Detail extends Component {
         <div>
           {data.length > 0 && data[0] ?
             <div className={styles.detailsBanner}>
-              <img  src={[require(`../../assets/img/${data[0].upload_fid}`)]} />
+              {/*<img  src={[require(`../../assets/img/${data[0].upload_fid}`)]} />*/}
+              <img  src={[require("../../assets/img/AIbanner.png")]} />
               <div className={styles.bannerTitle}>{data[0].title}</div>
 
             </div> : ''
