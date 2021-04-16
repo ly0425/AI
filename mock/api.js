@@ -89,6 +89,14 @@ const db = {
         "nid_1": 96519,
         "body": "  "
       },{
+        "nid": 96525,
+        "title": "科室收入影响因素分析",
+        "view_node": "<a href=\"\/vista_oa\/1\/node\/96525\">document.json\/96525 <\/a>",
+        "weight": "-13",
+        "depth": "3",
+        "nid_1": 96519,
+        "body": ""
+      },{
         "nid": 96529,
         "title": "科室收入相关性和服务量相关性",
         "view_node": "<a href=\"\/vista_oa\/1\/node\/96529\">document.json\/96529 <\/a>",
@@ -157,14 +165,6 @@ const db = {
       "body": " <p>从大量的医疗新闻、医院历史数据、公开药品库、和医疗资源库,建立起实体之间的语义关系,最后形成知识图谱、医学大脑、成为社会化医疗知识库<\/p>\n ",
       "upload_fid": "network.jpg",
       "children": [{
-        "nid": 96521,
-        "title": "病种资源消耗知识图谱",
-        "view_node": "<a href=\"\/vista_oa\/1\/node\/96521\">document.json\/96521 <\/a>",
-        "weight": "0",
-        "depth": "3",
-        "nid_1": 96520,
-        "body": " <p>构建医院财经域的病种和服务项目知识图谱<\/p>\n "
-      },{
         "nid": 96522,
         "title": "临床路径知识图谱",
         "view_node": "<a href=\"\/vista_oa\/1\/node\/96522\">document.json\/96522 <\/a>",
@@ -172,6 +172,14 @@ const db = {
         "depth": "3",
         "nid_1": 96520,
         "body": " <p>基于临床路径规范，构建医院病种和服务项目的临床路径知识图谱，基于临床路径知识图谱可以辅导业务系统规范、经济的运行；智能指导医护人员规范操作，减少操作失误，提高医疗服务质量<\/p>\n "
+      },{
+        "nid": 96521,
+        "title": "病种资源消耗知识图谱",
+        "view_node": "<a href=\"\/vista_oa\/1\/node\/96521\">document.json\/96521 <\/a>",
+        "weight": "0",
+        "depth": "3",
+        "nid_1": 96520,
+        "body": " <p>构建医院财经域的病种和服务项目知识图谱<\/p>\n "
       }]
     },{
       "nid": 96513,
@@ -183,14 +191,6 @@ const db = {
       "body": " <p>基于优质的AI核心算法技术，覆盖医院运营管理方面的常用算法模型，提供机器学习，自然语言处理，统计分析，约束优化等算法工具，支持领域定制化服务，助力您的经济管理业务腾飞<\/p>\n ",
       "upload_fid": "bytes.jpeg",
       "children": [{
-        "nid": 96525,
-        "title": "因素分析算法SDK文档",
-        "view_node": "<a href=\"\/vista_oa\/1\/node\/96525\">document.json\/96525 <\/a>",
-        "weight": "-13",
-        "depth": "3",
-        "nid_1": 96513,
-        "body": ""
-      },{
         "nid": 96531,
         "title": "关联规则挖掘SDK文档",
         "view_node": "<a href=\"\/vista_oa\/1\/node\/96531\">document.json\/96531 <\/a>",
@@ -249,8 +249,16 @@ const db = {
         "nid_1": 96518,
         "body": ""
       },{
+        "nid": 96550,
+        "title": "人工智能用户平台",
+        "view_node": "<a href=\"\/vista_oa\/1\/node\/96550\">document.json\/96550 <\/a>",
+        "weight": "0",
+        "depth": "3",
+        "nid_1": 96518,
+        "body": " <p>望海人工智能用户平台，给用户提供可视化操作和实验机器学习任务的平台<\/p>\n "
+      },{
         "nid": 96540,
-        "title": "调用环境",
+        "title": "接口调用说明",
         "view_node": "<a href=\"\/vista_oa\/1\/node\/96540\">document.json\/96540 <\/a>",
         "weight": "0",
         "depth": "3",
