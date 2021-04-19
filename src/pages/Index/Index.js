@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
 import { Icon } from 'antd';
-
 import GridContent from '@/components/PageHeaderWrapper/GridContent';
-
 import Link from 'umi/link';
-import { index } from '@/services/api';
-
+// import { index } from '@/services/api';
 import styles from './Index.less';
+import indexJson from '../../assets/mock_json/document_tree';
 
 class Index extends Component {
-
   state = {
-    data: [],
+    // data: [],
+    data: indexJson.document_tree
   };
 
   componentDidMount() {
-    index().then(r => {
-      this.setState({
-        data: r.document_tree,
-      });
-    });
+    // index().then(r => {
+    //   this.setState({
+    //     data: r.document_tree,
+    //   });
+    // });
   }
 
   render() {
@@ -31,7 +29,7 @@ class Index extends Component {
           <div className={styles.center}>
             <h1>产品服务</h1>
             <ul className={styles.box}>
-              {data.length > 0 ?
+              {data && data.length > 0 ?
                 data[0].children.map((item, index) =>
                   (
                     <li className={styles.modular} key={index}>

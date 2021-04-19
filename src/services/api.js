@@ -1,5 +1,7 @@
 import { stringify } from 'qs';
 import request from '@/utils/request';
+import indexJson from '../assets/mock_json/document_tree';
+import detailJson from '../assets/mock_json/detail_json';
 
 export async function queryProjectNotice() {
   return request('/api/project/notice');
@@ -126,9 +128,11 @@ export async function getFakeCaptcha(mobile) {
 }
 
 export function index() {
-  return request('/api/index');
+  // return request('/api/index');
+  return new Promise((resolve) => {resolve()}).then(() => indexJson);
 }
 
 export function detail(id) {
-  return request(`/api/detail/${id}`);
+  // return request(`/api/detail/${id}`);
+  return new Promise((resolve) => {resolve()}).then(() => detailJson[`${id}`]);
 }

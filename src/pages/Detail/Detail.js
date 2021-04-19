@@ -14,7 +14,7 @@ class Detail extends Component {
     const { match: { params } } = this.props;
     detail(params.id).then(r => {
       this.setState({
-        data: r.document,
+        data: r,
       });
     });
   }
@@ -31,7 +31,7 @@ class Detail extends Component {
       const nextId = nextProps.match.params.id;
       detail(nextId).then(r => {
         this.setState({
-          data: r.document,
+          data: r,
         });
       });
     }
