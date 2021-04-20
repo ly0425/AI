@@ -6,7 +6,6 @@ export default [
       {
         path: '/',
         name: 'home',
-        icon: 'dashboard',
         component: './Index/Index',
       },
       {

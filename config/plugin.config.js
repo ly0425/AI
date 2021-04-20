@@ -25,4 +25,15 @@ export default config => {
       indexFileName: 'index.html',
     },
   ]);
+  // css的修改
+  config.plugin('extract-css').use(require('mini-css-extract-plugin'), [
+    {
+      // filename: `[name].css`,
+      filename: "vadp-ai.css",
+      chunkFilename: `[name].[contenthash:8].chunk.css`,
+    },
+  ]);
+  //js的修改
+  config.output.filename('vadp-ai.js');
+  config.output.library('vadpAi');
 };

@@ -1,10 +1,7 @@
-import thunk from 'redux-thunk';
-import { getNavData } from './models/nav';
+import { getNavData } from './common/nav';
 
-const vadpAI = {
-  onAction: thunk,
-  thunk: thunk,
+const vadpAi = {
   getNavData: getNavData,
 }
-window.vadpAIs = vadpAI;
-export default vadpAI
+window.vadpAi = vadpAi;
+export default vadpAi
